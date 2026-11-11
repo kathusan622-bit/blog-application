@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlogSpace - Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">BlogSpace</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="create-blog.html">Create Blog</a></li>
+        <span id="authLinks" style="display: contents"></span>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="dash-header">
+          <div>
+            <h2 class="section-title" id="welcome" style="margin-bottom: 0">Welcome!</h2>
+            <p style="color: var(--gray)">Manage all your blogs from here.</p>
+          </div>
+          <a href="create-blog.html" class="btn">Write a new blog</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat s1"><h4>My blogs</h4><p id="statMine">0</p></div>
+          <div class="stat s2"><h4>All blogs on BlogSpace</h4><p id="statAll">0</p></div>
+          <div class="stat s3"><h4>Categories I write in</h4><p id="statCats">0</p></div>
+        </div>
+
+        <h3 class="section-title">My Blogs</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Category</th>
+                <th>Date</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="blogTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    &copy; <span id="year"></span> BlogSpace. Built with HTML, CSS &amp; JavaScript.
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

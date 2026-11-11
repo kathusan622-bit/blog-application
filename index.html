@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlogSpace - Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">BlogSpace</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="create-blog.html">Create Blog</a></li>
+        <span id="authLinks" style="display: contents"></span>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Write it. Share it. Get read.</h1>
+        <p>BlogSpace is where students and developers publish what they learn. Pick a topic, write your post, and see it on the home page in seconds.</p>
+        <div class="hero-actions">
+          <a href="create-blog.html" class="btn">Write a blog</a>
+          <a href="#blogs" class="btn btn-ghost">Read blogs</a>
+        </div>
+        <div class="chips-float" aria-hidden="true">
+          <span class="chip-f">#Technology</span>
+          <span class="chip-f">#Design</span>
+          <span class="chip-f">#Programming</span>
+          <span class="chip-f">#Travel</span>
+          <span class="chip-f">#Lifestyle</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="blogs">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Latest blogs</h2>
+          <div class="filters" id="filters"></div>
+        </div>
+        <div class="blog-grid" id="blogGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    &copy; <span id="year"></span> BlogSpace. Built with HTML, CSS &amp; JavaScript.
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
